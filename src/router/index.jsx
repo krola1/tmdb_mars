@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
 import TrendingPage from "../pages/TrendingPage";
+import SearchPage from "../pages/SearchPage";
 
 export const router = createBrowserRouter([
   {
@@ -11,6 +12,7 @@ export const router = createBrowserRouter([
         index: true,
         element: <TrendingPage />,
       },
+      { path: "search", element: <SearchPage /> },
     ],
   },
 ]);
