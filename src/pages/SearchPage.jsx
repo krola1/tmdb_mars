@@ -14,8 +14,16 @@ export default function SearchPage() {
       <input
         value={text}
         type="text"
+        list="suggestions"
         onChange={(e) => setText(e.target.value)}
       />
+
+      {/* creates autocomplete suggestions in searchfield */}
+      <datalist id="suggestions">
+        {data?.results?.map((movie) => (
+          <option key={movie.id} value={movie.title} />
+        ))}
+      </datalist>
       {text.trim() && (
         <MovieList
           data={data}
