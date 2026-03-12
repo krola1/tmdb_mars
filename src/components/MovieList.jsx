@@ -9,7 +9,7 @@ export default function MovieList({ data, isLoading, isError, error }) {
   return (
     <div className={styles.wrapper}>
       {data?.results.map((movie) => (
-        <Link>
+        <Link to={`/movies/${movie.id}`} key={movie.id}>
           <MovieCard {...movie} />
         </Link>
       ))}

@@ -3,6 +3,7 @@ import MovieList from "../components/MovieList";
 
 export default function TrendingPage() {
   const { data, isLoading, isError, error } = useTrendingMovies();
+  console.log(data);
 
   return (
     <>

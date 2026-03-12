@@ -1,0 +1,23 @@
+.wrapper {
+  background-size: cover;
+  background-position: center;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.poster {
+  /* width: 50vw; */
+  height: 75vh;
+  border-radius: 12px;
+  box-shadow:
+    0 0 0 2px rgba(255, 255, 255, 0.5),
+    0 10px 25px rgba(255, 255, 255, 0.2);
+}
+.textbox {
+  border: 12px;
+  background-color: rgba(0, 0, 0, 0.214);
+  width: 50vh;
+}
